@@ -1,0 +1,20 @@
+<mvc:View controllerName="dynamictable.controller.View1"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:t="sap.ui.table"
+	displayBlock="true" >
+	<Page id="page" title="{i18n>title}">
+		<HBox >
+			<Button id="buttonAddRow" icon="sap-icon://add" press="onAddRow" />
+			<Button id="buttonAddColumn" icon="sap-icon://add-process" press="onAddColumn" />
+			<Input id="input" value="{/newColumn}"></Input>
+			<Button id="buttonPrint" icon="sap-icon://print" press="onPrint" class="sapUiSmallMarginBegin"/>
+		</HBox>
+
+		<t:Table id="myTable" rows="{/values}">
+			<t:columns>
+
+			</t:columns>
+		</t:Table>
+	</Page>
+</mvc:View>
